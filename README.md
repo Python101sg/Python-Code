@@ -8,7 +8,7 @@
 7. Plan
 
 
-Bank and Branches - Thanga 
-Customer and Acounts Close and opening - Tushar and MAnas
-Withdrawals and Desposit -  Nidhi 
-transfers - Adithya and Yash
+Bank and Branches - Thanga, 
+Customer and Acounts Close and opening - Tushar and MAnas, 
+Withdrawals and Desposit -  Nidhi, 
+transfers - Adithya and Yash, 
