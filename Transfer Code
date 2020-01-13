@@ -1,0 +1,43 @@
+#Account Numbers, Names, Balance in saving account is written for testing purposes only
+#AccDet (Account Details) is the master dictionary which stores all the Account Numbers and corrosponding Names of our costumers
+AccDet = {123456789012: 'Yash Agrawal', 234567890123: 'Adithya balaji'}
+    
+#SavAcc (Savings Account) is the dictianary that stores all the Account Numbers and corrosponding value of Money our costumer has in his/her account
+SavAcc = {123456789012: 5000, 234567890123: 6000}
+    
+    #AccNoI (Acccount Number Input)
+AccNoI = int(input('Enter Account Number '))
+    
+if len(str(AccNoI)) != 12:
+    print ('Please enter your 12 digit PinCode')
+elif AccNoI in AccDet.keys():
+    print('This account number', AccNoI,  'has been recognised as', AccDet.get(AccNoI), 'account! We Welcome You! ') 
+    
+#Rec (Recipient)
+    Rec = int(input('Enter Account Number of recipient '))
+    if len(str(Rec)) != 12:
+        print ('Please enter the recipients 12 digit PinCode')
+    elif Rec in AccDet.keys():
+        print('This account number',Rec,  'has been recognised as', AccDet.get(Rec), 'account!') 
+    
+#SavAccV (Saving Account Value) The money they need to extract from their account 
+    SavAccV = int(input('Enter Amount you want to transfer reciepeint - SGD$'))
+    if SavAccV > int(SavAcc.get(AccNoI)):
+        print ('This is an invalid. Please enter a valid amount for transfer.')
+    else:
+        print ('Congratulations! Your transaction to account number', Rec, 'has been sucessful!') 
+    
+#RemAmt (Remaining Amount in senders account)
+    RemAmt = int(SavAcc.get(AccNoI)) - int(SavAccV)
+    
+#SaveAccF (Saving Account Final after transaction)
+    print('You have SGD$', RemAmt, 'remaining in your account')
+    SavAccF = {AccNoI: RemAmt}
+    
+    SavAcc.update(SavAccF)
+    print('Your Savings Account, account number', AccNoI, ' has been updated to hold SGD$', SavAcc[AccNoI])
+    
+#We still need to remove the transacted amount from the senders saving account, and add the transacted amount to the recipients saving account
+    
+else:
+    print('This is invalid. Transaction Unscuccesful.')
