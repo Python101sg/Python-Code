@@ -1,10 +1,6 @@
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 from PyQt5.QtWidgets import QMessageBox, QApplication, QWidget, QInputDialog, QLineEdit
-
-
-
 
 class Ui_MainWindow(QWidget):
 
