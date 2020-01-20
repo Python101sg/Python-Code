@@ -15,8 +15,6 @@ import sqlite3
 dbb = sqlite3.connect('BankNH.db')
 
 
-
-
 def CreateDbb():
 
     dbb.execute(''' CREATE TABLE IF NOT EXISTS NEWBANK(
@@ -196,15 +194,8 @@ class Ui_WelcomePage(object):
         self.registrationPage.show()
 
         WelcomePage.close()
-
-
-
-
-
-
-
-
-
+        
+        
 
     def retranslateUi(self, WelcomePage):
 
@@ -223,11 +214,6 @@ class Ui_WelcomePage(object):
         self.pushButton_QUIT_WELCOME.setText(_translate("WelcomePage", "QUIT PROGRAM"))
 
         self.menuQuit.setTitle(_translate("WelcomePage", "Quit"))
-
-
-
-
-
 
 
 if __name__ == "__main__":
