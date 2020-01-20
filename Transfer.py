@@ -333,10 +333,6 @@ class Ui_TransferWindow(object):
 
 
 
-
-
-
-
 if __name__ == "__main__":
 
     import sys
