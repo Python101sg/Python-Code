@@ -1,7 +1,7 @@
 # Python-Code
 
 added some files to the code database file bankdb,the code are files marked with .py
-tushar tweak the code for new registration/account as that was taskes to you
+tushar tweak the code for new registration/account as that was tasked to you
 
 1. Bugs fix
 2. Change duplicates
