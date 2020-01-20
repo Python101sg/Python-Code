@@ -159,12 +159,7 @@ class Ui_DepositWindow(object)
 
         self.MainWindow.show()
 
-
-
-
-
-
-
+        
     def retranslateUi(self, DepositWindow):
 
         _translate = QtCore.QCoreApplication.translate
