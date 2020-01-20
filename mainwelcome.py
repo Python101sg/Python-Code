@@ -193,7 +193,7 @@ class Ui_WelcomePage(object):
 
         WelcomePage.setWindowTitle(_translate("WelcomePage", "Welcome Page"))
 
-        self.label.setText(_translate("WelcomePage", "WELCOME TO NEW BANK MFB"))
+        self.label.setText(_translate("WelcomePage", "WELCOME TO GIIS STUDENT'S BANK OF SINGAPORE"))
 
         self.label_2.setText(_translate("WelcomePage", "Do You Have An existing Account? "))
 
@@ -201,7 +201,7 @@ class Ui_WelcomePage(object):
 
         self.pushButton_WELCOME_NO.setText(_translate("WelcomePage", "NO"))
 
-        self.pushButton_QUIT_WELCOME.setText(_translate("WelcomePage", "QUIT PROGRAM"))
+        self.pushButton_QUIT_WELCOME.setText(_translate("WelcomePage", "QUIT"))
 
         self.menuQuit.setTitle(_translate("WelcomePage", "Quit"))
 
