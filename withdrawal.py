@@ -2,17 +2,17 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_WithdrawalWindow(object,):
 
-    def setupUi(self, WithdrawalWindow):
+    def setupUi(self, WithdrawWindow):
 
-        WithdrawalWindow.setObjectName("WithdrawalWindow")
+        WithdrawWindow.setObjectName("WithdrawWindow")
 
-        WithdrawalWindow.resize(480, 368)
+        WithdrawWindow.resize(480, 368)
 
-        WithdrawalWindow.setStyleSheet("background-color: rgb(12, 31, 45);\n"
+        WithdrawWindow.setStyleSheet("background-color: rgb(12, 31, 45);\n"
 
 "")
 
-        self.centralwidget = QtWidgets.QWidget(WithdrawalWindow)
+        self.centralwidget = QtWidgets.QWidget(WithdrawWindow)
 
         self.centralwidget.setObjectName("centralwidget")
 
@@ -166,28 +166,28 @@ class Ui_WithdrawalWindow(object,):
 
         self.horizontalLayout.addWidget(self.pushButton_withdrawalCancel)
 
-        WithdrawalWindow.setCentralWidget(self.centralwidget)
+        WithdrawWindow.setCentralWidget(self.centralwidget)
 
-        self.menubar = QtWidgets.QMenuBar(WithdrawalWindow)
+        self.menubar = QtWidgets.QMenuBar(WithdrawWindow)
 
         self.menubar.setGeometry(QtCore.QRect(0, 0, 480, 26))
 
         self.menubar.setObjectName("menubar")
 
-        WithdrawalWindow.setMenuBar(self.menubar)
+        WithdrawWindow.setMenuBar(self.menubar)
 
-        self.statusbar = QtWidgets.QStatusBar(WithdrawalWindow)
+        self.statusbar = QtWidgets.QStatusBar(WithdrawWindow)
 
         self.statusbar.setObjectName("statusbar")
 
-        WithdrawalWindow.setStatusBar(self.statusbar)
+        WithdrawWindow.setStatusBar(self.statusbar)
 
 
 
 
-        self.retranslateUi(WithdrawalWindow)
+        self.retranslateUi(WithdrawWindow)
 
-        QtCore.QMetaObject.connectSlotsByName(WithdrawalWindow)
+        QtCore.QMetaObject.connectSlotsByName(WithdrawWindow)
 
         self.pushButton_withdrawalCancel.clicked.connect(self.WithdrawalCancle)
 
@@ -219,33 +219,6 @@ class Ui_WithdrawalWindow(object,):
 
         print('Withdrawal button')
 
-        # import sqlite3
-
-        # self.getText()
-
-        #
-
-        # conn = sqlite3.connect("BankNH.db")
-
-        # okPressed = self.getText()
-
-        # with conn:
-
-        #     cur= conn.cursor()
-
-        #     cur.execute("SELECT BAL FROM NEWBANK WHERE PASSWORD =? ", ([okPressed,]))
-
-        #     data = cur.fetchall()
-
-        #     print(data)
-
-        #     print('WithdrwalButton')
-
-
-
-
-
-
 
     def WithdrawalCancle(self):
 
@@ -267,11 +240,11 @@ class Ui_WithdrawalWindow(object,):
 
 
 
-    def retranslateUi(self, WithdrawalWindow):
+    def retranslateUi(self, WithdrawWindow):
 
         _translate = QtCore.QCoreApplication.translate
 
-        WithdrawalWindow.setWindowTitle(_translate("WithdrawalWindow", "Withdrawal"))
+        WithdrawWindow.setWindowTitle(_translate("WithdrawalWindow", "Withdrawal"))
 
         self.label_amountWTD.setText(_translate("WithdrawalWindow", "AMOUNT"))
 
@@ -306,12 +279,12 @@ if __name__ == "__main__":
 
     app = QtWidgets.QApplication(sys.argv)
 
-    WithdrawalWindow = QtWidgets.QMainWindow()
+    WithdrawWindow = QtWidgets.QMainWindow()
 
-    ui = Ui_WithdrawalWindow()
+    ui = Ui_WithdrawWindow()
 
-    ui.setupUi(WithdrawalWindow)
+    ui.setupUi(WithdrawWindow)
 
-    WithdrawalWindow.show()
+    WithdrawWindow.show()
 
     sys.exit(app.exec_())
