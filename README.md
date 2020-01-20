@@ -1,4 +1,8 @@
 # Python-Code
+
+added some files to the code database file bankdb,the code are files marked with .py
+tushar tweak the code for new registration/account as that was taskes to you
+
 1. Bugs fix
 2. Change duplicates
 3. Chnge PIN to Numeric
