@@ -139,15 +139,7 @@ class Ui_WelcomePage(object):
         self.retranslateUi(WelcomePage)
 
         QtCore.QMetaObject.connectSlotsByName(WelcomePage)
-
-
-
-
-        ###################################################
-
-        ####               Connecting buttons          ####
-
-        ###################################################
+     #buttons
 
         self.pushButton_WELCOME_NO.clicked.connect(self.reg)
 
