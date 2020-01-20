@@ -317,11 +317,8 @@ class Ui_registrationPage(object):
 
         self.insertdb()
 
-######################################################
+ #AUTHENTICATION FOR REGISTRATION PAGE
 
-######   AUTHENTICATION FOR REGISTRATION PAGE  #######
-
-######################################################
 
 
 
