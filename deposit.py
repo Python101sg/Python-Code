@@ -1,5 +1,3 @@
-
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 from mainprofile import Ui_MainWindow
@@ -7,8 +5,7 @@ from mainprofile import Ui_MainWindow
 
 
 
-class Ui_DepositWindow(object):
-
+class Ui_DepositWindow(object)
     def setupUi(self, DepositWindow):
 
         DepositWindow.setObjectName("DepositWindow")
