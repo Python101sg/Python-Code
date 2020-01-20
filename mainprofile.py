@@ -214,16 +214,10 @@ class Ui_MainWindow(QWidget):
         self.pushButton_logout.clicked.connect(self.Logout)
 
 
-
-
     def CancleNow(self):
 
         print('working')
 
-
-
-
-# Pop Messages
 
     def MessagesProfile(self, title, message):
 
@@ -242,8 +236,6 @@ class Ui_MainWindow(QWidget):
         mssg.exec_()
 
 
-
-
     def buttonClickeed(self, me):
 
         if me.text() == QMessageBox.Ok:
@@ -253,8 +245,6 @@ class Ui_MainWindow(QWidget):
             quit()
 
 
-
-
     def Logout(self):
 
         self.MessagesProfile('Quit', 'Will you like to quit?')
@@ -262,13 +252,9 @@ class Ui_MainWindow(QWidget):
         quit()
 
 
-
-
     def DeleteAcc(self):
 
         print('DeleteAcc')
-
-
 
 
     def EditProfile(self):
@@ -276,20 +262,14 @@ class Ui_MainWindow(QWidget):
         print('EditProfile')
 
 
-
-
     def SeeRefferals(self):
 
         print('SeeRefferals')
 
 
-
-
     def CheckAll(self):
 
         print('CheckAll')
-
-
 
 
     def Withdrawal(self):
@@ -353,19 +333,9 @@ class Ui_MainWindow(QWidget):
         pmsg.exec_()
 
 
-
-
     def initUI(self):
 
         self.getText()
-
-
-
-
-
-
-
-
 
 
     def CheckBal(self):
