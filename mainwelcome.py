@@ -7,12 +7,8 @@ from registrationnew import Ui_registrationPage
 import sqlite3
 
 
+#Connecting and creating Sqlit database 
 
-#############################################
-
-## Connecting and creating Sqlit database ###
-
-##############################################
 
 
 
