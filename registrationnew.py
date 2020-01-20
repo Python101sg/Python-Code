@@ -386,9 +386,6 @@ class Ui_registrationPage(object):
 
 
 
-
-
-
     def login(self):
 
         self.LoginWindow = QtWidgets.QMainWindow()
@@ -401,17 +398,7 @@ class Ui_registrationPage(object):
 
 
 
-
-
-
-
-
-
-
-
-
-
-    def retranslateUi(self, registrationPage):
+     def retranslateUi(self, registrationPage):
 
         _translate = QtCore.QCoreApplication.translate
 
