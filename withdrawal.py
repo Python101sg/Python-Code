@@ -1,8 +1,4 @@
-
 from PyQt5 import QtCore, QtGui, QtWidgets
-
-
-
 
 class Ui_WithdrawalWindow(object,):
 
@@ -300,9 +296,6 @@ class Ui_WithdrawalWindow(object,):
         self.pushButton_withdrawlWithdrawbtn.setText(_translate("WithdrawalWindow", "WITHDRAW"))
 
         self.pushButton_withdrawalCancel.setText(_translate("WithdrawalWindow", "Cancel"))
-
-
-
 
 
 
