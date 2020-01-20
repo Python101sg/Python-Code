@@ -3,8 +3,6 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from mainprofile import Ui_MainWindow
 
 
-
-
 class Ui_DepositWindow(object)
     def setupUi(self, DepositWindow):
 
@@ -186,10 +184,6 @@ class Ui_DepositWindow(object)
         self.pushButton_deposit_cancle.setText(_translate("DepositWindow", "GO BACK OR CANCLE"))
 
         self.pushButton_deposit_transfer.setText(_translate("DepositWindow", "TRANSFER INSTEAD"))
-
-
-
-
 
 
 
