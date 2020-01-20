@@ -41,11 +41,9 @@ def CreateDbb():
 
     ''')
 
-#####################################
 
-##         GUI WELCOME PAGE       ##
+#GUI WELCOME
 
-#####################################
 
 class Ui_WelcomePage(object):
 
