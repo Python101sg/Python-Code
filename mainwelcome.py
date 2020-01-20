@@ -1,10 +1,3 @@
-
-
-
-
-
-# Form implementation generated from reading ui file 'Welcome.ui'
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 from Mainlogin import Ui_LoginWindow
