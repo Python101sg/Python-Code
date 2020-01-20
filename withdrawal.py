@@ -204,16 +204,6 @@ class Ui_WithdrawalWindow(object,):
 
         print(name)
 
-        # from PyQt5.QtWidgets import QInputDialog, QLineEdit
-
-        # text, okPressed = QInputDialog.getText(self, "Get text", "Your name:", QLineEdit.Normal, "")
-
-        # if okPressed and text != '':
-
-        #     print(text)
-
-
-
 
     def WithdrwalButton(self):
 
