@@ -11,9 +11,6 @@ dbb = sqlite3.connect('BankNH.db')
 
 c = dbb.cursor()
 
-
-
-
 class Ui_registrationPage(object):
 
     def setupUi(self, registrationPage):
@@ -464,11 +461,6 @@ class Ui_registrationPage(object):
         self.pushButton_reglogin.setText(_translate("registrationPage", "LOGIN"))
 
         self.label_10.setText(_translate("registrationPage", "REGISTRATION  PAGE"))
-
-
-
-
-
 
 
 if __name__ == "__main__":
