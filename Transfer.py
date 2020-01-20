@@ -289,10 +289,6 @@ class Ui_TransferWindow(object):
 
 
 
-
-
-
-
     def retranslateUi(self, TransferWindow):
 
         _translate = QtCore.QCoreApplication.translate
