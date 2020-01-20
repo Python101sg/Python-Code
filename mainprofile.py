@@ -400,16 +400,12 @@ class Ui_MainWindow(QWidget):
             # self.Passwordmessage()
 
 
-
-
         else:
 
             print('Invalid entry')
 
 
-
-
-    def retranslateUi(self, MainWindow):
+      def retranslateUi(self, MainWindow):
 
         _translate = QtCore.QCoreApplication.translate
 
@@ -436,10 +432,6 @@ class Ui_MainWindow(QWidget):
         self.pushButton_transfer.setText(_translate("MainWindow", "TRANSFER"))
 
         self.pushButton_logout.setText(_translate("MainWindow", "LOG OUT"))
-
-
-
-
 
 
 
