@@ -1,43 +1,53 @@
-#Account Numbers, Names, Balance in saving account is written for testing purposes only
-#AccDet (Account Details) is the master dictionary which stores all the Account Numbers and corrosponding Names of our costumers
-AccDet = {123456789012: 'Yash Agrawal', 234567890123: 'Adithya balaji'}
-    
-#SavAcc (Savings Account) is the dictianary that stores all the Account Numbers and corrosponding value of Money our costumer has in his/her account
-SavAcc = {123456789012: 5000, 234567890123: 6000}
-    
-    #AccNoI (Acccount Number Input)
-AccNoI = int(input('Enter Account Number '))
-    
-if len(str(AccNoI)) != 12:
-    print ('Please enter your 12 digit PinCode')
-elif AccNoI in AccDet.keys():
-    print('This account number', AccNoI,  'has been recognised as', AccDet.get(AccNoI), 'account! We Welcome You! ') 
-    
+AccNoI (Account Number Input) 
+     
+Add1=0
+
+AccNoI=input("Enter your  account number:")
+for i in AccNoI:
+      if(i.isdigit()):
+            Add1=Add1+1
+            print(Add1)
+Password =(input("Please enter your digit PassCode:"))
+Sum1= 0
+for i in Password:
+      if(i.isdigit()):
+            Sum1=Sum1+1
+print(Sum1)
+while (Add1) == 12 & (Sum1) == 12 :
+    print('This account number', AccNoI,  'has been recognised and our bank warmly welcomes You! ')  
+     
 #Rec (Recipient)
-    Rec = int(input('Enter Account Number of recipient '))
-    if len(str(Rec)) != 12:
-        print ('Please enter the recipients 12 digit PinCode')
-    elif Rec in AccDet.keys():
-        print('This account number',Rec,  'has been recognised as', AccDet.get(Rec), 'account!') 
-    
-#SavAccV (Saving Account Value) The money they need to extract from their account 
-    SavAccV = int(input('Enter Amount you want to transfer reciepeint - SGD$'))
+    Rec = (input('Enter Account Number of recipient '))
+     calculate1= 0
+for i in Rec:
+      if(i.isdigit()):
+        calculate1 =calculate1+1
+            print(Rec)
+        passcode= (input('Please enter the recipients bank Code'))
+for i in passcode:
+    Count1=0 
+      if(i.isdigit()):
+            Count1=Count1+1
+            print(Rec)
+            while calculate1==12 & passcode==4:
+        print('This account number',Rec,'has been recognised!')  
+     
+#SavAccV ( Account Value) The money they need to extract from their account  
+    SavAccV = int(input('Enter Amount you want to transfer recipient - SGD$'))
     if SavAccV > int(SavAcc.get(AccNoI)):
         print ('This is an invalid. Please enter a valid amount for transfer.')
     else:
-        print ('Congratulations! Your transaction to account number', Rec, 'has been sucessful!') 
-    
-#RemAmt (Remaining Amount in senders account)
+        print ('Congratulations! Your transaction to account number', Rec, 'has been successful!')  
+     
+#RemAmt (Remaining Amount in sender's account)
     RemAmt = int(SavAcc.get(AccNoI)) - int(SavAccV)
-    
-#SaveAccF (Saving Account Final after transaction)
+     
+#SaveAccF (Account  after transaction)
     print('You have SGD$', RemAmt, 'remaining in your account')
     SavAccF = {AccNoI: RemAmt}
-    
+     
     SavAcc.update(SavAccF)
-    print('Your Savings Account, account number', AccNoI, ' has been updated to hold SGD$', SavAcc[AccNoI])
-    
-#We still need to remove the transacted amount from the senders saving account, and add the transacted amount to the recipients saving account
-    
+    print('Your  account number', AccNoI, ' has been updated to hold SGD$', SavAcc[AccNoI])
+     
 else:
-    print('This is invalid. Transaction Unscuccesful.')
+    print('This is invalid. Transaction Unsuccessful.')
