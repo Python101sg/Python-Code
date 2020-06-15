@@ -159,7 +159,7 @@ while True:
                         print("\n")
                         print("----Deposition successful!----")
                         print("Your New Balance: ", balance, end=" ")
-                        print("-/Rs\n\n")
+                        print("$\n\n")
             if n < 1:
                 print("Your name and pin does not match!\n")
                 break
